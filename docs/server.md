@@ -39,7 +39,7 @@ sudo systemctl enable docker
 
 install docker-compose
 ```bash
-sudo yum install -y docker-compose
+sudo apt-get install docker-compose
 ```
 
 ## Start Docker
@@ -49,13 +49,21 @@ First, set following environment variables for your user (electron user)
 
 How to get values you can read in [upload_to_SharePoint.md](upload_to_SharePoint.md).
 
-Second,
+Second, clone automate_builder, go in docker folder and 
 create folder "settings" in the same dir with [docker-compose.yml](../docker/docker-compose.yml) 
 file and put there downloader config files.
 
 Finally,
 start docker services via
 ```bash
-sudo -E docker-compose up -d
+sudo -E docker-compose up
 ```
 This will start docker compose, pass environment variables from current user and detach from docker.
+
+
+Some docker useful commands
+
+To start a docker
+```bash
+sudo -E docker-compose up
+```
