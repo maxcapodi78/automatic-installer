@@ -56,7 +56,7 @@ file and put there downloader config files.
 Finally,
 start docker services via
 ```bash
-sudo -E docker-compose up
+sudo -E docker-compose up -d
 ```
 This will start docker compose, pass environment variables from current user and detach from docker.
 
