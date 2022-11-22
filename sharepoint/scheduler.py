@@ -8,6 +8,8 @@ from transfer_statistics import main as transfer_stats
 schedule.every(1).hours.do(uploader)
 schedule.every(1).hours.do(transfer_stats)
 schedule.every().sunday.do(cleaner)
+schedule.every().tuesday.do(cleaner)
+schedule.every().thursday.do(cleaner)
 
 
 while True:
