@@ -1,7 +1,7 @@
 In order to upload builds and collect statistics we run Ubuntu server with docker.
 
 ## Create new user
-First a new local user must be created:
+First a new local user must be added:
 ~~~
 sudo useradd -m -d /home_local/electron electron
 sudo passwd electron
