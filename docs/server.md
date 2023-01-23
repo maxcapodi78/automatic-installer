@@ -61,7 +61,7 @@ sudo -E docker-compose up -d
 This will start docker compose, pass environment variables from current user and detach from docker.
 
 
-Some docker useful commands
+Some Docker useful commands
 
 To start a docker
 ```bash
