@@ -443,7 +443,7 @@ class Downloader:
             logging.info(f"Request info about new package: {url}")
             try:
                 new_product_version = self.get_build_info_file_from_artifactory(url)
-            except:
+            except ArtifactoryException:
                 new_product_version = self.latest_build
         else:
             try:
@@ -884,7 +884,6 @@ class Downloader:
         if os.path.isfile(product_info_file):
             with open(product_info_file) as file:
                 file_content = file.readlines()
-
         for line in file_content:
             if "AnsProductBuildDate" in line:
                 full_build_date = line.split("=")[1].replace('"', "").replace("-", "")
