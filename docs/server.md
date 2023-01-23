@@ -2,6 +2,8 @@ In order to upload builds and collect statistics we run Ubuntu server with docke
 
 ## Create new user
 First a new local user must be added:
+=====================================
+
 ~~~
 sudo useradd -m -d /home_local/electron electron
 sudo passwd electron
@@ -56,12 +58,14 @@ file and put there downloader config files.
 Finally,
 start docker services via
 ```bash
-sudo -E docker-compose up -d
+sudo -E docker-compose up
 ```
 This will start docker compose, pass environment variables from current user and detach from docker.
 
 
 Some Docker useful commands
+===========================
+
 
 To start a docker
 ```bash
